@@ -1,0 +1,23 @@
+.row{
+    /* border: solid green; */
+    /* padding: 0% 5%; */
+    /* margin: 0px !important; */
+}
+.col{
+    /* border: dashed black; */
+}
+.input-box{
+    width: 100% !important;
+    padding: 1.475rem .75rem !important;
+}
+.search-box-container, .search-stars-container{
+    /* border: solid red; */
+}
+.search-box-container{
+    padding-right: 0px !important;
+}
+.search-stars-container{
+    display: flex;
+    justify-content: center !important;
+    padding-left: 0px !important;
+}

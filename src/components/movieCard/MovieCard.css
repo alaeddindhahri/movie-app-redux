@@ -1,0 +1,30 @@
+.card{
+    justify-content: center;
+    text-align: center;
+    /* border: solid !important; */
+    margin-bottom: 8%;
+}
+.card-body> div,button,p{
+    margin: 3% !important;
+    /* border: solid; */
+}
+.edit-delete-buttons{
+    flex-wrap: nowrap !important;
+    /* box-sizing: border-box !important; */
+}
+.edit-delete-buttons>div{
+    /* width: 50% !important; */
+    /* border: solid green; */
+    padding: 0px !important;
+}
+img{
+    /* border: solid red !important; */
+    max-height: 450px !important;
+}
+.card-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.col{
+    /* border: solid; */
+}

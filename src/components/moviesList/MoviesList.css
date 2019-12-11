@@ -1,0 +1,10 @@
+.movie-cards-container{
+    /* border: 3px solid green; */
+    margin: 1%;
+}
+.add-button{
+    padding: 30%;
+}
+.add-button:hover{
+    opacity: .8;
+}
