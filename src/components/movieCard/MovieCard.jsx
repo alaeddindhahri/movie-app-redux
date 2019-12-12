@@ -11,6 +11,7 @@ class MovieCard extends Component {
         store.dispatch(deleteMovie(idMovie))
     }
     render() {
+        // console.log(this.props.movieObject)
         return (
             <Col lg="3" xs="6" className="movie-card">
                 <Card>
@@ -18,12 +19,12 @@ class MovieCard extends Component {
                     <CardBody>
                         <CardTitle>{this.props.movieObject.title}</CardTitle>
                         <CardSubtitle>{this.props.movieObject.release}</CardSubtitle>
-                            <p className="rating">      {this.props.movieObject.rating===1?'★':this.props.movieObject.rating===2?'★★':this.props.movieObject.rating===3?'★★★':this.props.movieObject.rating===4?'★★★★':'★★★★★'}
+                            <p className="rating">      {this.props.movieObject.rating==1?'★☆☆☆☆':this.props.movieObject.rating==2?'★★☆☆☆':this.props.movieObject.rating==3?'★★★☆☆':this.props.movieObject.rating==4?'★★★★☆':'★★★★★'}
                             </p>
                         <Button>Movie Description</Button>
                         <Row className="edit-delete-buttons">
                             <Col className="edit-button">
-                                <Button color="info">Edit</Button>
+                                <Button color="info" onClick={()=>{this.props.toggleModal();this.props.editedMovie(this.props.movieObject)}}>Edit</Button>
                             </Col>
                             <Col className="delete-button">
                                 <Button color="danger" onClick={()=>this.handleDelete(this.props.movieObject.id)}>Delete</Button>

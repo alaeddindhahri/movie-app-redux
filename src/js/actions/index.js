@@ -39,9 +39,16 @@ export const filterMovies=(searchString,minimuRaring)=>(
 )
 
 /***** Edit movie action *****/
-export const editMovie=id=>(
+export const editMovie=(id,newMovie)=>(
     {
         type: EDIT_MOVIE,
-        id
+        payload: {
+            id, newMovie
+        }
+        // id,
+        // title,
+        // release,
+        // poster,
+        // rating
     }
 )

@@ -9,7 +9,11 @@ const moviesReducer = (state=[],action) => {
         case DELETE_MOVIE:
             return state.filter(el=>el.id!==action.id);
         case EDIT_MOVIE:
-            return;
+            console.log("update movie from reducer")
+            // console.log(el.id)
+            console.log(action.id)
+            return state.map(el=>el.id==action.payload.id? {...el, ...action.payload.newMovie}:el);
+            // return state.map(el=>el.id==action.id?{id:action.id,title:action.title,release:action.release,poster:action.poster,rating:action.rating}:el);
         case FILTER_MOVIES:
             return;
         default:return state;
