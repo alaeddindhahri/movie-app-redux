@@ -1,15 +1,3 @@
 .container-fluid{
-    /* border: solid black !important; */
     width: 90% !important;
-    /* margin: 0% 2% !important; */
-    /* box-sizing: border-box; */
-}
-.row{
-    /* border: solid red; */
-}
-.col{
-    /* border: solid green; */
-}
-.btn-danger{
-    /* background-color: gray !important; */
 }

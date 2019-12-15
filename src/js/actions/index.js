@@ -29,15 +29,6 @@ export const deleteMovie=id=>(
     }
 )
 
-/***** Filter movies action *****/
-export const filterMovies=(searchString,minimuRaring)=>(
-    {
-        type: FILTER_MOVIES,
-        searchString,
-        minimuRaring
-    }
-)
-
 /***** Edit movie action *****/
 export const editMovie=(id,newMovie)=>(
     {
@@ -45,10 +36,5 @@ export const editMovie=(id,newMovie)=>(
         payload: {
             id, newMovie
         }
-        // id,
-        // title,
-        // release,
-        // poster,
-        // rating
     }
 )
