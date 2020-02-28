@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
--install the needed node modules and dependencies on both server and client folder using "npm install"
+-install the needed node modules and dependencies on the main folder using "npm install"
 
 ## Built With
 
